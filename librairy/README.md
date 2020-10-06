@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+if you want to run this app in develpment you hav to :
+### 1.initialise your environment with `npm init` or `yarn init` 
+### 2.install all dependecies in need on package.json
+### 3.then cd or move on librairy folder then run `npm start ` for frontend and make sure 3000 port is available   
+### 4.so move or cd on server folder then run `npm run index`
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

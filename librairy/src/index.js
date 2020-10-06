@@ -3,26 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css'
-// import ApolloClient from 'apollo-boost'
 
 import {ApolloProvider} from 'react-apollo'
 import {BrowserRouter as Router} from 'react-router-dom'
-
-// const client=new ApolloClient({
-//   uri:'http://localhost:4000/graphql'
-// })
-
-
-
-
-
-
 import { ApolloClient } from 'apollo-client';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { HttpLink } from 'apollo-link-http';
 import { onError } from 'apollo-link-error';
 import { ApolloLink } from 'apollo-link';
-
+ 
+// here we initialized apollo and configure it to listen on 4000 from backend and handle  errors
 const client = new ApolloClient({
   link: ApolloLink.from([
     onError(({ graphQLErrors, networkError }) => {
