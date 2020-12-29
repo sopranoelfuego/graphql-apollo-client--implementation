@@ -8,7 +8,7 @@ const cors=require("cors")
 app.use(cors())//here we allow rquest from other serve (cross-origin)
 
 // mongoose.connect("mongodb+srv://soprano:aubinjaja@cluster0-48opu.mongodb.net/test?retryWrites=true&w=majority")
-const bridge="mongodb+srv://soprano:aubinjaja@cluster0-48opu.mongodb.net/test?retryWrites=true&w=majority"
+const bridge=
 mongoose.connect('mongodb://localhost/bookStore',{
     useNewUrlParser:true,
     useUnifiedTopology:true
